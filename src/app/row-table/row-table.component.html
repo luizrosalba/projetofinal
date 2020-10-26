@@ -1,0 +1,56 @@
+<tr *ngIf="displayElement">
+  <td avatar>
+    <img [src]="user['avatar_url']" width="80px" height="80px" />
+  </td>
+  <td id>
+    {{ user['id'] }}
+  </td>
+  <td login>
+    <input type="string" [(ngModel)]="user['login']" />
+  </td>
+  <td html_url>
+    <input type="string" [(ngModel)]="user['html_url']" />
+  </td>
+  <td type>
+    <input type="string" [(ngModel)]="user['type']" />
+  </td>
+  <td editar>
+    <button mat-button (click)="clickEditar(user)">Editar</button>
+  </td>
+  <td deletar>
+    <button mat-button (click)="clickDelete(user['id'])">Deletar</button>
+  </td>
+</tr>
+
+<!-- <td>
+  <button mat-button (click)="clickEditar(user)">Editar</button>
+</td>
+<td>
+  <button mat-button (click)="clickDelete(user.id)">Deletar</button>
+</td> -->
+
+<!--
+<tr>
+  <td>
+    <ng-content select="[avatar]"></ng-content>
+    <img [(src)]="avatar" width="80px" height="80px" />
+    alert('avatar');
+  </td>
+  <td >
+    {{id}}
+  </td>
+  <td >
+    <ng-content select="[login]"></ng-content>
+    <input id="login" type="string" [(ngModel)]="login" />
+  
+  </td>
+  <td >
+    <ng-content select="[html_url]"></ng-content>
+    <input type="string" [(ngModel)]="html_url" />
+  </td>
+  <td >
+    <ng-content select="[type]"></ng-content>
+    <input type="string" [(ngModel)]="type" />
+  </td>
+</tr>
+ -->

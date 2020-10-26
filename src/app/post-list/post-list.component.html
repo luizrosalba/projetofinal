@@ -1,0 +1,32 @@
+<table>
+  <thead>
+    <th>Adicionar Usuário</th>
+  </thead>
+  <tbody>
+    <tr>
+      <td>Id</td>
+      <td>Url do Avatar</td>
+      <td>Login</td>
+      <td>Página</td>
+      <td>Tipo de Usuário</td>
+    </tr>
+    <tr>
+      <td>Auto</td>
+      <td>
+        <input type="string" [(ngModel)]="users.avatar_url" />
+      </td>
+      <td>
+        <input type="string" [(ngModel)]="users.login" />
+      </td>
+      <td>
+        <input type="string" [(ngModel)]="users.html_url" />
+      </td>
+      <td>
+        <input type="string" [(ngModel)]="users.type" />
+      </td>
+      <td>
+        <button mat-button (click)="clickAdd(users)">Adicionar</button>
+      </td>
+    </tr>
+  </tbody>
+</table>

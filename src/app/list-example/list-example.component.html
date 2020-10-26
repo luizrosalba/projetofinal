@@ -1,0 +1,84 @@
+<table>
+  <thead>
+    <th>Lista de Usuários</th>
+  </thead>
+  <tbody>
+    <app-row-table *ngFor="let user of usuarios; trackBy: trackById" [user]="user"> </app-row-table>
+  </tbody>
+</table>
+
+<!-- <tr>
+<tr>
+  <td>Avatar</td>
+  <td>Id</td>
+  <td>Login</td>
+  <td>html</td>
+  <td>Tipo de Usuário</td>
+</tr>
+
+          <ng-content select="[id]"></ng-content>
+        
+          <ng-content select="[login]"></ng-content>
+        
+          <ng-content select="[html_url]"></ng-content>
+       
+          <ng-content select="[type]"></ng-content>
+        
+          <button mat-button (click)="clickEditar(user)">Editar</button>
+      
+          <button mat-button (click)="clickDelete(user.id)">Deletar</button>
+       
+      </tr> -->
+
+<!-- 
+  <table>
+  <thead>
+    <th>Lista de Usuários</th>
+  </thead>
+  <tbody>
+    <tr>
+      <td>Avatar</td>
+      <td>Id</td>
+      <td>Login</td>
+      <td>html</td>
+      <td>Tipo de Usuário</td>
+    </tr>
+
+    <tr *ngFor="let user of usuarios; trackBy: trackById">
+      <td>
+        <img [src]="user.avatar_url" width="80px" height="80px" />
+      </td>
+      <td >
+        {{user.id}}
+      </td>
+      <td >
+        <input type="string" [(ngModel)]="user.login" />     
+      </td>
+      <td >
+        <input type="string" [(ngModel)]="user.html_url" />
+      </td>
+      <td >
+        <input type="string" [(ngModel)]="user.type" />
+      </td>
+      <td>
+        <button mat-button (click)="clickEditar(user)">Editar</button>
+      </td>
+      <td>
+        <button mat-button (click)="clickDelete(user.id)">Deletar</button>
+      </td>
+    </tr>
+  </tbody>
+</table>  
+-->
+
+<!--  [avatar]="user.avatar" 
+    [login]="user.login" 
+    [id]="user.id"  
+    [html_url]="user.html_url"
+    [type]="user.type">
+  //(userMudado)="save($event)"  
+<app-row-table  *ngFor="let user of usuarios; trackBy: trackById"
+     [user]="user">
+    </app-row-table>           
+
+-->

@@ -1,0 +1,20 @@
+{
+  "APP_NAME": "Gerenciador de Usuários",
+  "About": "Sobre",
+  "Hello world !": "Bem Vindo !",
+  "Home": "Home",
+  "New User": "Novo Usuário",
+  "User List": "Listar Usuários",
+  "Delete User": "Deletar Usuário",
+  "Update User": "Atualizar Usuário",
+  "Logged in as": "Logado Como",
+  "Login": "Login",
+  "Logout": "Logout",
+  "Password": "Senha",
+  "Password is required": "Senha necessária",
+  "Username": "Nome de Usuário",
+  "Username is required": "Nome de usuário necessário",
+  "Username or password incorrect.": "Nome de usuário ou senha incorreto.",
+  "Remember me": "Lembre de mim",
+  "Version": "Versão"
+}
